@@ -1,5 +1,5 @@
 //
-//  CDVPassbook.m
+//  CDVXocializePassbook.m
 //  Xocialize
 //
 //  Created by Dustin Nielson on 1/4/14.
@@ -7,10 +7,10 @@
 //
 
 
-#import "CDVPassbook.h"
+#import "CDVXocializePassbook.h"
 
 
-@implementation CDVPassbook
+@implementation CDVXocializePassbook
 
 - (void) cordovaGetPasses:(CDVInvokedUrlCommand *)command {
     

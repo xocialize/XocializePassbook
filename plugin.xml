@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="org.xocialize.cordova.xocializescanner" version="0.0.2">
-	<name>xocialize_scanner</name>
-	<description>Barcode Scanner Plugin</description>
+	<name>XocializePassbook</name>
+	<description>Simple Passbook for Cordova</description>
 	<license>Apache 2.0</license>
-	<keywords>cordova,barcode,Scanner</keywords>
-	<js-module src="www/XocializeScanner.js" name="xocializescanner">
-		<clobbers target="window.plugins.xocializescanner" />
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+	<keywords>cordova,Passbook</keywords>
+	<js-module src="www/XocializePassbook.js" name="xocializepassbook">
+		<clobbers target="window.plugins.xocializepassbook" />
 	</js-module>
 	<platform name="ios">
-        <framework src="Foundation.framework" />
-        <framework src="AVFoundation.framework" />
+        <framework src="PassKit.framework" />
         <framework src="UIKit.framework" />
 		<config-file target="config.xml" parent="/*">
-			<feature name="XocializeScanner">
-				<param name="ios-package" value="CDVXocializeScanner"/>
+			<feature name="XocializePassbook">
+				<param name="ios-package" value="CDVXocializePassbook"/>
 			</feature>
 		</config-file>
-		<header-file src="src/ios/CDVXocializeScanner.h" />
-		<source-file src="src/ios/CDVXocializeScanner.m" />
+		<header-file src="src/ios/CDVXocializePassbook.h" />
+		<source-file src="src/ios/CDVXocializePassbook.m" />
 	</platform>
 </plugin>

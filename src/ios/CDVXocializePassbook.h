@@ -1,5 +1,5 @@
 //
-//  CDVPassbook.h
+//  CDVXocializePassbook.h
 //  Xocialize
 //
 //  Created by Dustin Nielson on 1/4/14.
@@ -15,12 +15,10 @@
 
 @class UIViewController;
 
-@interface CDVPassbook : CDVPlugin <UIViewControllerAnimatedTransitioning>{
+@interface CDVXocializePassbook : CDVPlugin <UIViewControllerAnimatedTransitioning>{
      NSArray *_passes;
      NSString *yourUrl;
      PKPassLibrary *passLib;
-     //UIViewController *presentViewController;
-    
 }
 
 
